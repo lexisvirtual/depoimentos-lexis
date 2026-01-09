@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depoimentos - Lexis Academy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+            color: #ffffff;
+            padding: 60px 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        .header-label {
+            color: #fbbf24;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+        
+        .header h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        
+        .header p {
+            font-size: 18px;
+            color: #9ca3af;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 24px;
+            margin-bottom: 60px;
+        }
+        
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 32px;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(251, 191, 36, 0.5);
+        }
+        
+        .quote-mark {
+            color: #fbbf24;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+        
+        .testimonial-text {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #e5e7eb;
+            margin-bottom: 24px;
+            font-style: italic;
+        }
+        
+        .author {
+            margin-top: 24px;
+        }
+        
+        .author-name {
+            font-size: 14px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 4px;
+        }
+        
+        .author-role {
+            font-size: 12px;
+            color: #fbbf24;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        @media (max-width: 768px) {
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-label">EVOLUÇÃO VALIDADA</div>
+            <h1>O que dizem os alunos</h1>
+            <p>Profissionais que saíram da teoria para a segurança prática.</p>
+        </div>
+        
+        <div class="testimonials-grid">
+            <!-- Depoimento 1 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">Tentei 4 escolas e nunca saí do zero. Com a Imersão Lexis, em 14 dias destravei reuniões internacionais sem medo de errar.</p>
+                <div class="author">
+                    <div class="author-name">RICARDO M.</div>
+                    <div class="author-role">DIRETOR COMERCIAL</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 2 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">Finalmente entendi que inglês é treino muscular e não estudo de gramática. Fluência veio sem pressão.</p>
+                <div class="author">
+                    <div class="author-name">ANA CLARA F.</div>
+                    <div class="author-role">ARQUITETA</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 3 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">Parei de traduzir mentalmente. As frases começaram a sair naturais em menos de 2 meses no Maestria.</p>
+                <div class="author">
+                    <div class="author-name">GUSTAVO S.</div>
+                    <div class="author-role">DEV SR.</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 4 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">O modelo de treinamento procedural da Lexis é o único que funcionou para minha rotina exaustiva. Em poucas semanas, a barreira da fala desapareceu.</p>
+                <div class="author">
+                    <div class="author-name">CARLOS EDUARDO T.</div>
+                    <div class="author-role">VP DE OPERAÇÕES</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 5 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">A Imersão foi o divisor de águas. Saí de um inglês 'travado' para apresentar cases em Nova York com total confiança e sem roteiro.</p>
+                <div class="author">
+                    <div class="author-name">MARIANA L.</div>
+                    <div class="author-role">HEAD DE MARKETING</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 6 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">A metodologia focada em fonética e automação mudou meu jogo. Hoje participo de daily calls com o time global sem precisar de tradutor ou hesitação.</p>
+                <div class="author">
+                    <div class="author-name">FERNANDO J.</div>
+                    <div class="author-role">ESPECIALISTA CLOUD</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 7 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">Depois de anos tentando aprender inglês de forma tradicional, a Lexis me mostrou que o segredo está na repetição inteligente. Minha compreensão auditiva aumentou 80%.</p>
+                <div class="author">
+                    <div class="author-name">JULIANA P.</div>
+                    <div class="author-role">GERENTE DE PROJETOS</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 8 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">O The Way Cíclico me deu a flexibilidade que eu precisava. Consigo treinar no meu ritmo e os resultados aparecem naturalmente.</p>
+                <div class="author">
+                    <div class="author-name">RAFAEL B.</div>
+                    <div class="author-role">EMPREENDEDOR</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 9 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">A abordagem neurocientífica da Lexis é revolucionária. Em 8 semanas passei de intermediário para avançado, negociando contratos internacionais.</p>
+                <div class="author">
+                    <div class="author-name">THIAGO M.</div>
+                    <div class="author-role">ADVOGADO EMPRESARIAL</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 10 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">Nunca imaginei que conseguiria dar palestras em inglês. A Lexis me preparou não só tecnicamente, mas emocionalmente para falar com segurança.</p>
+                <div class="author">
+                    <div class="author-name">BEATRIZ S.</div>
+                    <div class="author-role">PROFESSORA UNIVERSITÁRIA</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 11 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">As ferramentas de apoio como Memrise e ChatClass tornaram meu aprendizado contínuo. Treino até no caminho do trabalho.</p>
+                <div class="author">
+                    <div class="author-name">PEDRO H.</div>
+                    <div class="author-role">ENGENHEIRO DE SOFTWARE</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 12 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">A garantia vitalícia me deu segurança para investir. Já refiz o curso uma vez e consolidei ainda mais meu conhecimento.</p>
+                <div class="author">
+                    <div class="author-name">CAMILA R.</div>
+                    <div class="author-role">MÉDICA</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 13 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">O foco em phrasal verbs essenciais foi um diferencial. Uso diariamente em negociações internacionais.</p>
+                <div class="author">
+                    <div class="author-name">LUCAS A.</div>
+                    <div class="author-role">CONSULTOR FINANCEIRO</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 14 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">Entendi que fluência não é saber tudo, mas sim responder automaticamente. A Lexis me ensinou isso na prática.</p>
+                <div class="author">
+                    <div class="author-name">DANIELA F.</div>
+                    <div class="author-role">COORDENADORA PEDAGÓGICA</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 15 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">A imersão presencial foi transformadora. 10 horas diárias parecem intensas, mas os resultados valem cada minuto.</p>
+                <div class="author">
+                    <div class="author-name">ANDRÉ L.</div>
+                    <div class="author-role">CEO STARTUP</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 16 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">Com o Maestria Online consegui conciliar minha rotina de trabalho com o aprendizado. As aulas das 19h-22h foram perfeitas.</p>
+                <div class="author">
+                    <div class="author-name">PATRICIA M.</div>
+                    <div class="author-role">ANALISTA DE SISTEMAS</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 17 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">A metodologia de repetição espaçada funciona! Lembro de tudo que aprendi mesmo meses depois.</p>
+                <div class="author">
+                    <div class="author-name">RODRIGO S.</div>
+                    <div class="author-role">DENTISTA</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 18 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">Finalmente um método que prioriza a fala ao invés da teoria. Minha pronncia melhorou 100%.</p>
+                <div class="author">
+                    <div class="author-name">ISABELA C.</div>
+                    <div class="author-role">PUBLICITÁRIA</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 19 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">O suporte nativo via WhatsApp é incrível. Sempre que tenho dúvidas, recebo respostas rápidas e precisas.</p>
+                <div class="author">
+                    <div class="author-name">BRUNO V.</div>
+                    <div class="author-role">DESIGNER GRÁFICO</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 20 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">Saí do básico para o avançado em 3 meses. Hoje conduzo webinars em inglês para clientes no exterior.</p>
+                <div class="author">
+                    <div class="author-name">AMANDA T.</div>
+                    <div class="author-role">PRODUCT MANAGER</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 21 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">A abordagem sem decoração de regras gramaticais foi libertadora. Aprendi fazendo, não estudando.</p>
+                <div class="author">
+                    <div class="author-name">VINICIUS G.</div>
+                    <div class="author-role">CHEF DE COZINHA</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 22 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">O conceito de automação cognitiva mudou minha percepção sobre aprendizado de idiomas. Funciona de verdade!</p>
+                <div class="author">
+                    <div class="author-name">RENATA O.</div>
+                    <div class="author-role">PSICÓLOGA</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 23 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">Participo de conferências internacionais sem hesitação. A Lexis me deu a confiança que faltava.</p>
+                <div class="author">
+                    <div class="author-name">EDUARDO P.</div>
+                    <div class="author-role">PESQUISADOR</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 24 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">O investimento retornou rapidamente. Consegui uma promoção no trabalho graças à fluência adquirida.</p>
+                <div class="author">
+                    <div class="author-name">GABRIELA N.</div>
+                    <div class="author-role">ANALISTA CONTÁBIL</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 25 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">As simulações de reuniões e viagens de negócios me prepararam perfeitamente para o mundo real.</p>
+                <div class="author">
+                    <div class="author-name">HENRIQUE D.</div>
+                    <div class="author-role">EXECUTIVO DE VENDAS</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 26 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">Minha compreensão auditiva melhorou drasticamente. Assisto séries em inglês sem legenda agora.</p>
+                <div class="author">
+                    <div class="author-name">TATIANA B.</div>
+                    <div class="author-role">ADVOGADA</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 27 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">O ambiente seguro da imersão me ajudou a vencer o bloqueio psicológico. Hoje falo sem medo.</p>
+                <div class="author">
+                    <div class="author-name">LEONARDO K.</div>
+                    <div class="author-role">ARQUITETO</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 28 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">A flexibilidade dos multiturnos no The Way foi essencial. Treino sempre nos horários que se encaixam na minha agenda.</p>
+                <div class="author">
+                    <div class="author-name">SOFIA W.</div>
+                    <div class="author-role">JORNALISTA</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 29 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">Em 2 meses consegui me comunicar fluentemente com fornecedores internacionais. O ROI do curso é indiscutível.</p>
+                <div class="author">
+                    <div class="author-name">MÁRCIO J.</div>
+                    <div class="author-role">GERENTE DE COMPRAS</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 30 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">A plataforma Teaches organiza todo o conteúdo de forma intuitiva. É fácil revisar sempre que preciso.</p>
+                <div class="author">
+                    <div class="author-name">FERNANDA Q.</div>
+                    <div class="author-role">BIBLIOTECÁRIA</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 31 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">Hoje realizo entrevistas de emprego em inglês com total naturalidade. A Lexis mudou minha carreira.</p>
+                <div class="author">
+                    <div class="author-name">CAIO R.</div>
+                    <div class="author-role">RECRUTADOR</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 32 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">A abordagem procedural eliminou meu bloqueio de anos. Finalmente me sinto confortvel falando inglês.</p>
+                <div class="author">
+                    <div class="author-name">VANESSA L.</div>
+                    <div class="author-role">FARMACÊUTICA</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 33 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">As aulas gravadas permitem que eu revise quantas vezes precisar. A flexibilidade é excelente.</p>
+                <div class="author">
+                    <div class="author-name">GUILHERME F.</div>
+                    <div class="author-role">CONTADOR</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 34 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">A expansão estratégica de vocabulrio foi muito eficiente. Aprendi o essencial sem perder tempo.</p>
+                <div class="author">
+                    <div class="author-name">LAURA M.</div>
+                    <div class="author-role">TRADUTORA</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 35 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">Consegui uma vaga em multinacional graças ao domínio do inglês adquirido na Lexis. Gratidão eterna!</p>
+                <div class="author">
+                    <div class="author-name">DIEGO A.</div>
+                    <div class="author-role">ANALISTA DE MARKETING</div>
+                </div>
+            </div>
+            
+            <!-- Depoimento 36 -->
+            <div class="testimonial-card">
+                <div class="quote-mark">“</div>
+                <p class="testimonial-text">O método Lexis transformou meu relacionamento com o idioma. De frustração para confiança absoluta em poucas semanas.</p>
+                <div class="author">
+                    <div class="author-name">ROBERTA S.</div>
+                    <div class="author-role">ADMINISTRADORA</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
